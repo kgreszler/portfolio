@@ -1,0 +1,346 @@
+/***************************************************
+// Reset
+***************************************************/
+
+/* border-box makes everything easy */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,input,select,textarea,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,figure,footer,header,nav,section,main{
+	box-sizing: border-box;
+}
+
+/* Better behavior for lists */
+ul,ol{
+	list-style-position: outside;
+	margin-left: 1.4rem;
+	padding-left: 0;
+}
+
+/* Keep images and videos from overspilling their bounds */
+img, video{
+	display: block;
+	max-width :100%;
+	height: auto;
+}
+
+/* Make hr just a simple line */
+hr{
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1rem 0;
+	padding: 0;
+}
+
+/* Reduce quirky behavior for tables */
+table{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Make input text line up with other text */
+input,select{
+	vertical-align: middle;
+}
+
+/* Kill default borders on fieldsets */
+fieldset{
+	border: none;
+}
+
+/* It's rare to want an inline textarea */
+textarea{
+	display: block;
+}
+
+/* Make sub and sup text line up better */
+sub,sup{
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sup{
+	top: -0.5rem;
+}
+sub{
+	bottom: -0.25rem;
+}
+
+/* A fix for SVG display in old versions of IE. */
+svg:not(:root){
+	overflow: hidden;
+}
+
+/*==============================================
+
+	Typography
+
+===============================================*/
+
+html {
+	--color-green:#8d8741;
+	--color-blue:#659dbd;
+	--color-tan:#daad86;
+	--color-brown:#bc986a;
+	--color-cream:#fbeec1;
+	
+	--font-display:'Odibee Sans', Helvetica, cursive;
+	--font-primary: 'Open Sans', Helvetica, sans-serif;
+	font-size: 1.25rem;
+	--size-one: 5.96rem;
+	--size-two: 4.768rem;
+	--size-three: 3.815rem;
+	--size-four: 3.052rem;
+	--size-five: 2.441rem;
+	--size-small: 1.0953rem;
+
+	
+
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: var(--font-display);
+
+}
+
+h1 {
+	color: var(--color-cream);
+	font-size: var(--size-one);
+	margin-bottom: 1rem;
+	text-align: center;
+}
+
+h2 {
+	color: var(--color-cream);
+	font-size: var(--size-two);
+	text-align: center;
+}
+
+h3 {
+	font-size: var(--size-three);
+}
+
+h4 {
+	font-size: var(--size-four);
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+	text-align: center;
+}
+
+h5 {
+	font-size: var(--size-five);
+}
+
+h6 {
+	font-size: var(--size-small);
+}
+
+a {
+	color: var(--color-blue);
+	text-decoration: none;
+}
+
+a:visited {
+	color: var(--color-green);
+
+}
+
+ a:hover {
+	text-transform: uppercase;
+ }
+
+ a:focus {
+ 	outline-color:var(--color-tan);
+
+ }
+
+ a:active {
+ 	color: var)--color-cream);
+
+ }
+
+ blockquote {
+ 	color: var(--color-cream)
+ }
+ 
+.bold{
+	font-weight: bold;
+}
+
+.resume {
+	text-align: center;
+}
+/*==============================================
+
+	Header
+
+===============================================*/
+
+.site-header {
+	align-items: center;
+	background-color: var(--color-cream);
+	display: flex;
+	margin-top: 0;
+}
+
+.site-header ul {
+	list-style: none;
+	margin: 0;
+vertical-align: middle;}
+
+.site-header li {
+	line-height: 1.5rem;
+	padding-left: .5rem;
+	padding-right: .5rem;
+
+}
+
+.site-header img {
+	margin-left: 1rem;
+}
+.action-button {
+	background-color: var(--color-cream);
+	border: 2px solid;
+	border-color: var(--color-tan);
+	border-radius: .5rem;
+	padding: .5rem;
+	text-decoration: none;
+
+}
+
+.action-button a {
+	color: var(--color-green);
+}
+
+.current-page {
+	color: var(--color-brown);
+}
+
+.logo {
+	border: 3px solid;
+}
+/*==============================================
+
+	Main
+
+===============================================*/
+
+.hero {
+	background-image: url(images/hero1.jpeg);
+	background-size: cover;
+	background-position: center;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+	text-align: center;
+	}
+
+body {
+	margin: 0;
+	
+}
+
+.hero p {
+	background-color: var(--color-blue);
+	border: 1px solid;
+	max-width: 75vh;
+
+}
+
+.grid div {
+	border: 3px solid var(--color-blue);
+	margin: 2rem;
+}
+
+}
+.grid p {
+	text-align: center;}
+
+.grid h4 {
+	text-align: center;
+}
+
+.grid li {
+	list-style: none;
+	text-align: center;
+
+}
+
+.project img {
+	display: block;
+	margin: auto;
+}
+
+.project-nav ul {
+	display: flex;
+	list-style: none;
+	justify-content: center;
+	margin-top: 0;
+}
+
+.project-nav li {
+	padding-right: 1rem;
+}
+
+.project p {
+	text-align: center;
+}
+
+div.contact {
+	display: block;
+	text-align: center;
+}
+
+form {
+	display: inline-block;
+	margin-bottom: 1rem;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+
+@media (min-width: 800px) {
+	.site-header {
+		display: flex;
+		justify-content: center;
+	}
+
+	
+
+	.project {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+}
+
+
+
+/*==============================================
+
+	Footer
+
+===============================================*/
+
+.site-footer {
+	background-color: var(--color-cream);
+	text-align: center;
+
+}
+
+
+.site-footer ul {
+	display: flex;
+	list-style: none;
+	justify-content: center;
+	margin-top: 0;
+
+}
+
+.site-footer li {
+	padding-right: 1rem;
+
+}
+
+
